@@ -12,7 +12,7 @@ RUN pip install --no-cache-dir --upgrade pip setuptools wheel
 
 # Step-by-step installation (isolate errors)
 RUN pip install --no-cache-dir torch==2.2.0 torchaudio==2.2.0 numpy
-RUN pip install --no-cache-dir whisperx==3.1.0
+RUN pip install --no-cache-dir git+https://github.com/m-bain/whisperx.git
 RUN pip install --no-cache-dir "pyannote.audio>=3.1"
 RUN pip install --no-cache-dir fastapi
 RUN pip install --no-cache-dir "uvicorn[standard]"
