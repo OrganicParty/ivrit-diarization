@@ -1,5 +1,5 @@
 # Use ivrit base image
-FROM ivritai/whisper-runpod-serverless:2025.0710
+FROM python:3.10-slim
 
 # Install diarization dependencies
 RUN pip install --no-cache-dir \
